@@ -6,12 +6,12 @@ const cheerio = require('cheerio');
 const app = express();
 const newspapers = [
   {
-    name: 'thetimes',
+    name: 'times',
     address: 'https://www.thetimes.co.uk/environment/climate-change',
     base: '',
   },
   {
-    name: 'theguardian',
+    name: 'guardian',
     address: 'https://www.theguardian.com/environment/climate-crisis',
     base: '',
   },
