@@ -2,25 +2,11 @@ const PORT = process.env.PORT || 3000;
 const express = require('express');
 const axios = require('axios');
 const cheerio = require('cheerio');
+const newspapers = require('./newspapers');
+
+console.log(newspapers);
 
 const app = express();
-const newspapers = [
-  {
-    name: 'times',
-    address: 'https://www.thetimes.co.uk/environment/climate-change',
-    base: '',
-  },
-  {
-    name: 'guardian',
-    address: 'https://www.theguardian.com/environment/climate-crisis',
-    base: '',
-  },
-  {
-    name: 'telegraph',
-    address: 'https://www.telegraph.co.uk/climate-change',
-    base: 'https://www.telegraph.co.uk',
-  },
-];
 
 const articles = [];
 

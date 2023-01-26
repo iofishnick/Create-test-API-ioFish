@@ -35,11 +35,11 @@ const newspapers = [
     address: 'https://www.smh.com.au/environment/climate-change',
     base: 'https://www.smh.com.au',
   },
-  {
-    name: 'un',
-    address: 'https://www.un.org/climatechange',
-    base: '',
-  },
+  // {
+  //   name: 'un',
+  //   address: 'https://www.un.org/climatechange',
+  //   base: '',
+  // },
   {
     name: 'bbc',
     address: 'https://www.bbc.co.uk/news/science_and_environment',
@@ -67,3 +67,5 @@ const newspapers = [
     base: '',
   },
 ];
+
+module.exports = newspapers;
